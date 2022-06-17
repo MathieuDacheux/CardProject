@@ -15,7 +15,6 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100px;
-    width: 100%;
 }
 
 h1 {
@@ -26,13 +25,15 @@ h1 {
 /* Corps */
 
 .card {
-    width: 80%;
     display: flex;
-    flex: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .cardContainer {
+    margin: 30px;
     width: 300px;
     height: 550px;
     background-color: hsl(216, 50%, 16%);
@@ -73,15 +74,60 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 0% 5%;
 }
 
-.cardContainerBuy > p:first-of-type {
+.cardContainerBuyLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardContainerBuyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cardContainerBuyLeft > p:first-of-type {
+    padding-left: 3px;
     font-size: 0.9em;
     color: hsl(178, 100%, 50%);
 }
 
-.cardContainerBuy > p:last-child {
+.cardContainerBuyRight > p:first-of-type {
+    padding-left: 3px;
     font-size: 0.9em;
     color: hsl(215, 51%, 70%);
+}
+
+hr {
+    border-color: hsl(215, 51%, 70%);;
+    margin: 5%;
+}
+
+.cardContainerAvatar {
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardAvatar {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.cardContainerAvatar > p:first-of-type {
+    font-size: 0.9em;
+    color: hsl(215, 51%, 70%);
+}
+
+.cardContainerAvatar span {
+    font-size: 1em;
+    color: hsl(0, 0%, 100%);
 }
