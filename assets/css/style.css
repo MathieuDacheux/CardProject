@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Corps */
+
+.card {
+    width: 80%;
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.cardContainer {
+    width: 300px;
+    height: 550px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.cardContainerImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    padding: 5%;
+}
+
+.cardImg {
+    width: 275px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.cardContainerContent {
+    padding: 5%;
+}
+
+.cardContainerContent > h2:first-of-type {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+.cardContainerContent > p:first-of-type {
+    font-size: 0.9em;
+    color: hsl(215, 51%, 70%);
+    padding-top: 5%;
+}
+
+.cardContainerBuy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+.cardContainerBuy > p:first-of-type {
+    font-size: 0.9em;
+    color: hsl(178, 100%, 50%);
+}
+
+.cardContainerBuy > p:last-child {
+    font-size: 0.9em;
+    color: hsl(215, 51%, 70%);
+}
